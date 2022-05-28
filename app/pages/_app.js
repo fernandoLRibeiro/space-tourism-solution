@@ -1,16 +1,24 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Layout from "../components/Layout/Layout";
+import Navbar from "../components/Navbar/Navbar";
 
 const GlobalStyle = createGlobalStyle`
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #0B0D17;
+    color: #FFFFFF;
+    
+    width: 100%;
+    max-width: 100vw;
   }
 `;
 
 const theme = {
-  colors: {
+  color: {
     black: "#0B0D17",
     grey: "#616476",
     lightBlue: "#D0D6F9",
@@ -23,7 +31,7 @@ const theme = {
       // Heading 5, Subheading2, Nav Text
       sansSerifCondensed: `'Barlow Condensed', sans-serif`,
     },
-    fontSizes: {
+    fontSize: {
       // Heading 1 desktop
       largest: "9.375em",
       // Heading 2 Desktop
@@ -54,9 +62,9 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <GlobalStyle />
+        <Navbar />
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );

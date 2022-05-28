@@ -56,3 +56,7 @@ export const BodyText = styled.p`
   font-size: ${({ theme }) => theme.font.fontSize.regular};
   font-weight: 400;
 `;
+
+export const NavTextNumber = styled(NavText)`
+  font-weight: 700;
+`;
