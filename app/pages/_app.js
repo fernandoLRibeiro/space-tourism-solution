@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Layout from "../components/Layout/Layout";
 import Navbar from "../components/Navbar/Navbar";
 
 const GlobalStyle = createGlobalStyle`
@@ -62,9 +63,10 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
+        {/* <Layout> */}
         <Navbar />
         <Component {...pageProps} />
+        {/* </Layout> */}
       </ThemeProvider>
     </>
   );

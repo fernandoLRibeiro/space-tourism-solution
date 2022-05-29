@@ -49,6 +49,7 @@ export const NavText = styled.p`
   font-size: ${({ theme }) => theme.font.fontSize.small};
   font-weight: 400;
   letter-spacing: ${({ theme }) => theme.font.letterSpacing.navText};
+  text-transform: uppercase;
 `;
 
 export const BodyText = styled.p`

@@ -7,6 +7,7 @@ import {
   Logo,
   NavLinksContainer,
   NavLink,
+  NavLi,
 } from "./Navbar.styled.";
 
 const Navbar = () => {
@@ -15,31 +16,41 @@ const Navbar = () => {
       <Logo src="./assets/shared/logo.svg" />
 
       <NavLinksContainer>
-        <Link href="./">
-          <NavLink>
-            <NavTextNumber>00</NavTextNumber>
+        <NavLi>
+          <Link href="/" passHref>
+            <NavLink>
+              <NavTextNumber>00</NavTextNumber>
+              <NavText>Home</NavText>
+            </NavLink>
+          </Link>
+        </NavLi>
 
-            <NavText>Home</NavText>
-          </NavLink>
-        </Link>
+        <NavLi>
+          <Link href="/destination" passHref>
+            <NavLink>
+              <NavTextNumber>01</NavTextNumber>
+              <NavText>Destination</NavText>
+            </NavLink>
+          </Link>
+        </NavLi>
 
-        <NavLink>
-          <NavTextNumber>01</NavTextNumber>
+        <NavLi>
+          <Link href="/crew" passHref>
+            <NavLink>
+              <NavTextNumber>02</NavTextNumber>
+              <NavText>Crew</NavText>
+            </NavLink>
+          </Link>
+        </NavLi>
 
-          <NavText>Destination</NavText>
-        </NavLink>
-
-        <NavLink>
-          <NavTextNumber>02</NavTextNumber>
-
-          <NavText>Crew</NavText>
-        </NavLink>
-
-        <NavLink>
-          <NavTextNumber>03</NavTextNumber>
-
-          <NavText>Technology</NavText>
-        </NavLink>
+        <NavLi>
+          <Link href="/technology" passHref>
+            <NavLink>
+              <NavTextNumber>03</NavTextNumber>
+              <NavText>Technology</NavText>
+            </NavLink>
+          </Link>
+        </NavLi>
       </NavLinksContainer>
     </StyledNavbar>
   );
