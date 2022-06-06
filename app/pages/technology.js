@@ -1,8 +1,8 @@
+import React from "react";
+import styles from "../styles/Technology.module.css";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const Technology = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,4 +10,6 @@ export default function Home() {
       </Head>
     </div>
   );
-}
+};
+
+export default Technology;
