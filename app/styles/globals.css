@@ -148,4 +148,21 @@ a {
   .navText {
     font-size: var(--font-size-small);
   }
+
+  .bodyText {
+    font-size: 15px;
+  }
+
+  .heading5 {
+    font-size: var(--font-size-small);
+  }
+
+  .heading1 {
+    font-size: 5rem;
+  }
+
+  .heading4 {
+    font-size: 1.25rem;
+    line-height: 1.4325em;
+  }
 }
