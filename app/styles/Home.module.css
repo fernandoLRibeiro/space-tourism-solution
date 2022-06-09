@@ -31,16 +31,32 @@
   outline: 0;
   border: 0;
   cursor: pointer;
+  color: var(--color-black);
 }
 
 .exploreButton:hover {
   outline: 5.5em solid rgba(255, 255, 255, 0.1);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     background-image: url("../public/assets/home/background-home-tablet.jpg");
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    margin: 5.625em auto;
+    padding: 0;
+    gap: 9.75em;
+    align-items: center;
+  }
+
+  .textContainer {
+    align-items: center;
+    text-align: center;
   }
 }
 
