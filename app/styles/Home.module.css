@@ -15,6 +15,8 @@
   padding: 8.125em 10.375em;
   justify-content: space-between;
   margin: 0;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .textContainer {
@@ -23,7 +25,7 @@
   gap: 1.5em;
   width: 27.75em;
   flex-wrap: wrap;
-  width: 100%;
+  width: min-content;
 }
 
 .exploreButton {
@@ -34,6 +36,7 @@
   border: 0;
   cursor: pointer;
   color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .exploreButton:hover {
@@ -57,6 +60,11 @@
   .textContainer {
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+
+  .exploreButton {
+    padding: 6.375em 3em;
   }
 }
 
