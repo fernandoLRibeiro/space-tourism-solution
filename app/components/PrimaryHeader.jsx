@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import styles from "../styles/PrimaryHeader.module.css";
 import Link from "next/link";
 
 const PrimaryHeader = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className={styles.primaryHeader}>
@@ -24,7 +26,11 @@ const PrimaryHeader = () => {
         <ul className={styles.navLinksContainer}>
           <li className={styles.navLinkContainer}>
             <Link href="/" passHref>
-              <a className={styles.navLink}>
+              <a
+                className={`${styles.navLink} ${
+                  router.pathname == "/" && styles.active
+                }`}
+              >
                 <p className="navNumber">00</p>
                 <p className="navText">Home</p>
               </a>
@@ -32,7 +38,11 @@ const PrimaryHeader = () => {
           </li>
           <li className={styles.navLinkContainer}>
             <Link href="/destination" passHref>
-              <a className={styles.navLink}>
+              <a
+                className={`${styles.navLink} ${
+                  router.pathname == "/destination" && styles.active
+                }`}
+              >
                 <p className="navNumber">01</p>
                 <p className="navText">Destination</p>
               </a>
@@ -40,7 +50,11 @@ const PrimaryHeader = () => {
           </li>
           <li className={styles.navLinkContainer}>
             <Link href="/crew" passHref>
-              <a className={styles.navLink}>
+              <a
+                className={`${styles.navLink} ${
+                  router.pathname == "/crew" && styles.active
+                }`}
+              >
                 <p className="navNumber">02</p>
                 <p className="navText">Crew</p>
               </a>
@@ -48,7 +62,11 @@ const PrimaryHeader = () => {
           </li>
           <li className={styles.navLinkContainer}>
             <Link href="/technology" passHref>
-              <a className={styles.navLink}>
+              <a
+                className={`${styles.navLink} ${
+                  router.pathname == "/technology" && styles.active
+                }`}
+              >
                 <p className="navNumber">03</p>
                 <p className="navText">Technology</p>
               </a>
