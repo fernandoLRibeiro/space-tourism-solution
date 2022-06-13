@@ -130,4 +130,10 @@
   .navLink {
     height: min-content;
   }
+
+  .navLink:hover,
+  .navLink:active,
+  .active {
+    border-bottom: none;
+  }
 }

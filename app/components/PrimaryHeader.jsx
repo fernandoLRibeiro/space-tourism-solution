@@ -9,6 +9,7 @@ const PrimaryHeader = () => {
   return (
     <header className={styles.primaryHeader}>
       <img src="./assets/shared/logo.svg" className={styles.headerLogo} />
+
       <button
         className={styles.mobileNavButton}
         onClick={() => setIsOpen(!isOpen)}

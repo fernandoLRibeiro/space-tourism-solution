@@ -65,6 +65,8 @@ a {
   font-family: var(--font-family-serif);
   font-size: var(--font-size-xxxlarge);
   font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .heading3 {
@@ -77,6 +79,8 @@ a {
   font-family: var(--font-family-serif);
   font-size: var(--font-size-xlarge);
   font-weight: 400;
+  text-transform: uppercase;
+  /* color: var(--color-white); */
 }
 
 .heading5 {
@@ -84,6 +88,7 @@ a {
   font-size: var(--font-size-large);
   letter-spacing: var(--letter-spacing-heading5);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .subheading1 {
@@ -97,6 +102,7 @@ a {
   font-size: var(--font-size-smaller);
   letter-spacing: var(--letter-spacing-subheading2);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .navText {
@@ -119,6 +125,12 @@ a {
   font-size: var(--font-size-regular);
   font-weight: 400;
   line-height: 2em;
+}
+
+.number {
+  color: var(--color-white);
+  font-weight: 700;
+  opacity: 25%;
 }
 
 @media screen and (max-width: 768px) {
