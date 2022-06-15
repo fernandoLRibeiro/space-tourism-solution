@@ -52,14 +52,18 @@ const Destination = () => {
               <div className={styles.clusterContainer}>
                 <div className={styles.cluster}>
                   <h5 className="subheading2">AVG. DISTANCE</h5>
-                  <h4 className={`heading4 ${styles.white}`}>
+                  <h4
+                    className={`heading4 ${styles.white} ${styles.customSize}`}
+                  >
                     {destinations[selectedItem].distance}
                   </h4>
                 </div>
 
                 <div className={styles.cluster}>
                   <h5 className="subheading2">Est. travel time</h5>
-                  <h4 className={`heading4 ${styles.white}`}>
+                  <h4
+                    className={`heading4 ${styles.white} ${styles.customSize}`}
+                  >
                     {destinations[selectedItem].travel}
                   </h4>
                 </div>

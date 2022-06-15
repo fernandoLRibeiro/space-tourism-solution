@@ -104,6 +104,10 @@
   gap: 0.75em;
 }
 
+.customSize {
+  font-size: 1.75em;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     background-image: url("../public/assets/destination/background-destination-tablet.jpg");
@@ -121,6 +125,7 @@
     align-items: center;
     text-align: center;
     padding: 0;
+    gap: 1.625em;
   }
 
   .textContent {
@@ -135,7 +140,24 @@
 }
 
 @media screen and (max-width: 480px) {
+  .main {
+    justify-content: center;
+    margin: 5.5em 6% 6%;
+  }
+
   .container {
     background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .lastSection {
+    margin-top: 0;
+  }
+  .clusterContainer {
+    flex-direction: column;
+    gap: 2em;
   }
 }

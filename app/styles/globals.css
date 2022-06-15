@@ -134,6 +134,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .heading2 {
+    font-size: 5em;
+  }
+
   .navNumber {
     display: none;
   }
@@ -171,6 +175,10 @@ a {
 
   .heading1 {
     font-size: 5rem;
+  }
+
+  .heading2 {
+    font-size: 3.5em;
   }
 
   .heading4 {
