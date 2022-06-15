@@ -3,7 +3,7 @@
   background-image: url("../public/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
 
   min-height: 100vh;
@@ -17,9 +17,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 13em 10.375em 7em;
+  margin: 14% 12% 7%;
   gap: 4em;
   justify-content: space-between;
+  width: 100%;
 }
 
 .headingContainer {
@@ -33,9 +34,12 @@
   align-items: flex-end;
   padding-left: 4em;
   height: 100%;
+  flex-wrap: wrap;
+  gap: 9.75em;
 }
 
 .image {
+  width: 40%;
   margin: 0;
 }
 
@@ -44,10 +48,10 @@
   flex-direction: column;
   gap: 2.25em;
   width: 40%;
-  height: 100%;
 }
 
 .labelsContainer {
+  width: max-content;
   display: flex;
   gap: 2.25em;
 }
@@ -64,9 +68,11 @@
   padding-bottom: 0.75em;
 }
 
-.active {
+.active,
+.selectorButton:hover {
   border-bottom: 3px solid white;
   color: white;
+  transition: all 0.1s ease-in-out;
 }
 
 .description {
@@ -101,6 +107,30 @@
 @media screen and (max-width: 768px) {
   .container {
     background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+  }
+
+  .main {
+    margin: 18% 5% auto;
+    gap: 3.75em;
+  }
+
+  .content {
+    gap: 3.375em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .textContent {
+    align-items: center;
+    width: 75%;
+    gap: 2em;
+  }
+
+  .lastSection {
+    margin-top: 1.125em;
   }
 }
 

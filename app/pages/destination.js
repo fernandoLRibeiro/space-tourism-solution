@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Destination.module.css";
 import Head from "next/head";
-import { destinations } from "../utils/data.json";
+import data from "../utils/data.json";
+
+const { destinations } = data;
 
 const Destination = () => {
   const [selectedItem, setSelectedItem] = useState(0);
