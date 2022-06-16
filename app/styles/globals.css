@@ -34,11 +34,14 @@
 }
 
 html,
-body {
+body,
+#__next {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
   font-family: var(--font-family-sans-serif);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: var(--color-light-blue);
 }
 
@@ -150,6 +153,14 @@ a {
   .bodyText {
     font-size: var(--font-size-small);
     line-height: 1.75em;
+  }
+
+  .heading3 {
+    font-size: 2.5em;
+  }
+
+  .heading4 {
+    font-size: 1.5em;
   }
 
   .heading5 {

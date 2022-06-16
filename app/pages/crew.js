@@ -45,13 +45,12 @@ const Crew = () => {
             ))}
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <img
-            src={crew[current].images.png}
-            className={styles.image}
-            alt={crew[current].name}
-          />
-        </div>
+
+        <img
+          src={crew[current].images.png}
+          className={styles.image}
+          alt={crew[current].name}
+        />
       </main>
     </div>
   );
