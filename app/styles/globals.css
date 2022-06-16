@@ -73,6 +73,7 @@ a {
   font-family: var(--font-family-serif);
   font-size: var(--font-size-xxlarge);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .heading4 {

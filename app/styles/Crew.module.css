@@ -3,10 +3,88 @@
   background-image: url("../public/assets/crew/background-crew-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 13.25em 10.375em 0px;
+}
+
+.firstHalf {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5em;
+  margin-bottom: 5.875em;
+  width: 75%;
+}
+
+.header {
+  display: flex;
+  gap: 1.75em;
+}
+
+.white {
+  color: white;
+}
+
+.image {
+  margin: 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.75em;
+  margin-top: 2.125em;
+}
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.role {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+.bioContainer {
+  width: 27.75em;
+}
+
+.sliderButtonsContainer {
+  justify-self: end;
+  display: flex;
+  gap: 1.5em;
+}
+
+.sliderButton {
+  width: 1em;
+  height: 1em;
+  border-radius: 100em;
+  outline: 0;
+  border: 0;
+  background-color: hsl(0, 0%, 100%, 0.17);
+  cursor: pointer;
+}
+
+.sliderButton:hover {
+  background-color: hsl(0, 0%, 100%, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.active {
+  background-color: white;
+  transition: all 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {

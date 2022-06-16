@@ -43,10 +43,15 @@
   align-items: center;
 }
 
-.navLink:hover,
-.navLink:active,
 .active {
   border-bottom: 3px solid white;
+  transition: all 0.1s ease-in-out;
+}
+
+.navLink:hover,
+.navLink:active {
+  border-bottom: 3px solid hsl(0, 0%, 100%, 0.5);
+
   transition: all 0.1s ease-in-out;
 }
 

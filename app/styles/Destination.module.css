@@ -68,10 +68,15 @@
   padding-bottom: 0.75em;
 }
 
-.active,
-.selectorButton:hover {
+.active {
   border-bottom: 3px solid white;
   color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.selectorButton:hover {
+  border-bottom: 3px solid hsl(0, 0%, 100%, 0.5);
+
   transition: all 0.1s ease-in-out;
 }
 
