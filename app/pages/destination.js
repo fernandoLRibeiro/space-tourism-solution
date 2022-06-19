@@ -37,7 +37,7 @@ const Destination = () => {
                   }`}
                   onClick={() => setSelectedItem(index)}
                 >
-                  <h6 className="subheading2">{destination.name}</h6>
+                  <h6 className="navText">{destination.name}</h6>
                 </button>
               ))}
             </div>
