@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/Technology.module.css";
 import Head from "next/head";
 import data from "../utils/data.json";
@@ -7,6 +7,29 @@ const { technology } = data;
 
 const Technology = () => {
   const [current, setCurrent] = useState(0);
+  const [isMobileSize, setIsMobileSize] = useState(false);
+
+  const useWindowSize = () => {
+    useEffect(() => {
+      if (typeof window !== undefined) {
+        const handleResize = () => {
+          if (window.innerWidth <= 768) {
+            setIsMobileSize(true);
+          } else {
+            setIsMobileSize(false);
+          }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []);
+    return isMobileSize;
+  };
+
+  useWindowSize();
 
   return (
     <div className={styles.container}>
@@ -46,7 +69,11 @@ const Technology = () => {
             </div>
           </div>
           <img
-            src={technology[current].images.portrait}
+            src={
+              isMobileSize
+                ? technology[current].images.landscape
+                : technology[current].images.portrait
+            }
             className={styles.image}
             alt={technology[current].name}
           />

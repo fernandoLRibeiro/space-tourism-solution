@@ -13,8 +13,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.625em;
-  padding: 13.25em 0 6.25em 10.3125em;
+  padding: 13.25em 0 10.3125em 7.25em;
   width: 100%;
+}
+
+.header {
+  display: flex;
+  gap: 1.75em;
 }
 
 .content {
@@ -23,7 +28,7 @@
   grid-template-columns: auto auto 4fr;
   justify-items: end;
   align-items: center;
-  column-gap: 5em;
+  column-gap: 5.5%;
   width: 100%;
 }
 
@@ -75,9 +80,58 @@
   max-width: 27.75em;
 }
 
+@media screen and (max-width: 1024px) {
+  .content {
+    column-gap: 2.5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     background-image: url("../public/assets/technology/background-technology-tablet.jpg");
+  }
+
+  .header {
+    margin-left: 2.375em;
+    gap: 1em;
+  }
+
+  .main {
+    padding: 8.5em 0 6em;
+    gap: 3.75em;
+  }
+
+  .content {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2.75em;
+  }
+
+  .image {
+    width: 100%;
+    grid-row: 1/2;
+  }
+
+  .sliderButtonsContainer {
+    margin-top: 0.75em;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .sliderButton {
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+  .description {
+    text-align: center;
+    align-items: center;
+  }
+
+  .descriptionTextContainer {
+    max-width: 28.625em;
   }
 }
 
