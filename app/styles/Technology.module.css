@@ -3,7 +3,6 @@
   background-image: url("../public/assets/technology/background-technology-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
@@ -125,6 +124,10 @@
     height: 3.75em;
   }
 
+  .cluster {
+    gap: 1em;
+  }
+
   .description {
     text-align: center;
     align-items: center;
@@ -138,5 +141,32 @@
 @media screen and (max-width: 480px) {
   .container {
     background-image: url("../public/assets/technology/background-technology-mobile.jpg");
+  }
+
+  .main {
+    padding: 5.5em 0 5em;
+    align-items: center;
+
+    gap: 2em;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .content {
+    gap: 1.625em;
+  }
+
+  .sliderButtonsContainer {
+    margin-top: 0.5em;
+  }
+
+  .cluster {
+    gap: 0.5em;
+  }
+
+  .descriptionTextContainer {
+    max-width: 20.5em;
   }
 }
