@@ -1,6 +1,6 @@
 :root {
   --color-black: #0b0d17;
-  --color-grey: #616476;
+  --color-grey: hsl(0, 0%, 100%, 0.5);
   --color-light-blue: #d0d6f9;
   --color-white: #ffffff;
 
@@ -137,6 +137,11 @@ a {
   opacity: 25%;
 }
 
+.header {
+  display: flex;
+  gap: 1.75em;
+}
+
 @media screen and (max-width: 768px) {
   .heading2 {
     font-size: 5em;
@@ -165,6 +170,10 @@ a {
 
   .heading5 {
     font-size: 1.25em;
+  }
+
+  .header {
+    gap: 1em;
   }
 }
 

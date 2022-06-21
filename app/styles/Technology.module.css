@@ -16,11 +16,6 @@
   width: 100%;
 }
 
-.header {
-  display: flex;
-  gap: 1.75em;
-}
-
 .content {
   display: grid;
   grid-template-rows: 1fr;
@@ -45,7 +40,7 @@
   background-color: transparent;
   color: white;
   outline: none;
-  border: 1px solid hsl(0, 0%, 100%, 0.5);
+  border: 1px solid var(--color-grey);
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
@@ -90,9 +85,8 @@
     background-image: url("../public/assets/technology/background-technology-tablet.jpg");
   }
 
-  .header {
+  .customHeader {
     margin-left: 2.375em;
-    gap: 1em;
   }
 
   .main {
@@ -148,10 +142,6 @@
     align-items: center;
 
     gap: 2em;
-  }
-
-  .header {
-    margin: 0;
   }
 
   .content {

@@ -15,7 +15,7 @@ const Crew = () => {
       </Head>
 
       <main className={styles.main}>
-        <header className={styles.header}>
+        <header className={`header `}>
           <h5 className="heading5 number">02</h5>
           <h5 className={`heading5 ${styles.white}`}>Meet Your Crew</h5>
         </header>

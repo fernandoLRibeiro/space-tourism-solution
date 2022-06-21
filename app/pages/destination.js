@@ -18,10 +18,10 @@ const Destination = () => {
         <title>Destination</title>
       </Head>
       <main className={styles.main}>
-        <div className={styles.headingContainer}>
+        <header className={`header `}>
           <h5 className="heading5 number">01</h5>
           <h5 className={`heading5 ${styles.white}`}>Pick your destination</h5>
-        </div>
+        </header>
         <div className={styles.content}>
           <img
             className={styles.image}
@@ -48,7 +48,6 @@ const Destination = () => {
               </p>
             </div>
             <div className={styles.lastSection}>
-              <div className={styles.divider}></div>
               <div className={styles.clusterContainer}>
                 <div className={styles.cluster}>
                   <h5 className="subheading2">AVG. DISTANCE</h5>

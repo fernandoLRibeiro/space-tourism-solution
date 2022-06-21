@@ -37,7 +37,7 @@ const Technology = () => {
         <title>Technology</title>
       </Head>
       <main className={styles.main}>
-        <header className={styles.header}>
+        <header className={`header ${styles.customHeader}`}>
           <h5 className="heading5 number">03</h5>
           <h5 className={`heading5 ${styles.white}`}>Space launch 101</h5>
         </header>

@@ -18,14 +18,8 @@
   padding: 13.25em 7.25em 0;
 }
 
-.header {
-  display: flex;
-  gap: 1.75em;
-  grid-row: 1/2;
-}
-
 .white {
-  color: white;
+  color: var(--color-white);
 }
 
 .imageContainer {
@@ -53,7 +47,7 @@
 }
 
 .role {
-  color: hsl(0, 0%, 100%, 0.5);
+  color: var(--color-grey);
 }
 
 .bioContainer {
@@ -79,12 +73,12 @@
 }
 
 .sliderButton:hover {
-  background-color: hsl(0, 0%, 100%, 0.5);
+  background-color: var(--color-grey);
   transition: all 0.1s ease-in-out;
 }
 
 .active {
-  background-color: white;
+  background-color: var(--color-white);
   transition: all 0.1s ease-in-out;
 }
 
@@ -131,20 +125,17 @@
   .main {
     grid-gap: 2em;
     padding: 5.5em 1.5em 0;
+    justify-items: center;
   }
 
   .role {
     font-size: 18.34px;
   }
 
-  .header {
-    justify-self: center;
-  }
-
   .imageContainer {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid hsl(0, 0%, 100%, 0.5);
+    border-bottom: 1px solid hsl(0, 0%, 100%, 0.25);
     width: 100%;
     grid-row: 2/3;
   }
