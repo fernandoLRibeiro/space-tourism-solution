@@ -29,8 +29,8 @@
 }
 
 .exploreButton {
-  padding: 7.5em 4em;
-  height: min-content;
+  width: 17.125rem;
+  height: 17.125rem;
   border-radius: 100%;
   outline: 0;
   border: 0;
@@ -40,7 +40,7 @@
 }
 
 .exploreButton:hover {
-  outline: 5.5em solid rgba(255, 255, 255, 0.1);
+  outline: 5.5rem solid rgba(255, 255, 255, 0.1);
   transition: all 0.1s ease-in;
 }
 
@@ -64,7 +64,8 @@
   }
 
   .exploreButton {
-    padding: 6.375em 3em;
+    width: 15.125em;
+    height: 15.125em;
   }
 }
 
@@ -85,6 +86,7 @@
   }
 
   .exploreButton {
-    padding: 3.75em 1.875em;
+    width: 9.375em;
+    height: 9.375em;
   }
 }
