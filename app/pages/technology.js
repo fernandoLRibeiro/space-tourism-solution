@@ -46,6 +46,7 @@ const Technology = () => {
           <div className={styles.sliderButtonsContainer}>
             {technology.map((item, index) => (
               <button
+                key={index}
                 className={`${styles.sliderButton} ${
                   current === index && styles.active
                 }`}

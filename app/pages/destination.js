@@ -32,6 +32,7 @@ const Destination = () => {
             <div className={styles.labelsContainer}>
               {destinations.map((destination, index) => (
                 <button
+                  key={index}
                   className={`${styles.selectorButton} ${
                     index === selectedItem && styles.active
                   }`}

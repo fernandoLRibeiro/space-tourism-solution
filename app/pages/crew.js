@@ -32,6 +32,7 @@ const Crew = () => {
         <div className={styles.sliderButtonsContainer}>
           {crew.map((member, index) => (
             <button
+              key={index}
               className={`${styles.sliderButton} ${
                 index === current && styles.active
               }`}
