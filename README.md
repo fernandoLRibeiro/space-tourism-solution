@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/space-tourism-solution-built-with-nextjs-0zWy91uAk9)
 - [Live Site URL](https://space-tourism-solution.vercel.app/)
 
 ## My process
