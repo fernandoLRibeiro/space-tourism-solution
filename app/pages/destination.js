@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Destination.module.css";
 import Head from "next/head";
 import data from "../utils/data.json";
@@ -7,10 +7,6 @@ const { destinations } = data;
 
 const Destination = () => {
   const [selectedItem, setSelectedItem] = useState(0);
-
-  useEffect(() => {
-    console.log(destinations);
-  });
 
   return (
     <div className={styles.container}>
