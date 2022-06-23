@@ -12,21 +12,21 @@
   --font-family-sans-serif: "Barlow", sans-serif;
 
   /* Heading 1 desktop */
-  --font-size-largest: 9.375em;
+  --font-size-largest: 9.375rem;
   /* Heading 2 Desktop */
-  --font-size-xxxlarge: 6.25em;
+  --font-size-xxxlarge: 6.25rem;
   /* Heading 3 Desktop */
-  --font-size-xxlarge: 3.5em;
+  --font-size-xxlarge: 3.5rem;
   /* Heading 4 desktop */
-  --font-size-xlarge: 2em;
+  --font-size-xlarge: 2rem;
   /* Heading 5 Desktop, Subheading 1 desktop */
-  --font-size-large: 1.75em;
+  --font-size-large: 1.75rem;
   /* Body Text desktop */
-  --font-size-regular: 1.125em;
+  --font-size-regular: 1.125rem;
   /* Nav Text desktop */
-  --font-size-small: 1em;
+  --font-size-small: 1rem;
   /* Subheading 2 desktop / Nav Text Tablet */
-  --font-size-smaller: 0.875em;
+  --font-size-smaller: 0.875rem;
 
   --letter-spacing-heading5: 4.75px;
   --letter-spacing-subheading2: 2.35px;
