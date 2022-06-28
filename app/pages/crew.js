@@ -43,7 +43,7 @@ const Crew = () => {
 
         <div className={styles.imageContainer}>
           <img
-            src={crew[current].images.png}
+            src={crew[current].images.webp}
             className={styles.image}
             alt={crew[current].name}
           />

@@ -21,8 +21,9 @@ const Destination = () => {
         <div className={styles.content}>
           <img
             className={styles.image}
-            src={destinations[selectedItem].images.png}
+            src={destinations[selectedItem].images.webp}
             alt={destinations[selectedItem].name}
+            loading="lazy"
           />
           <div className={styles.textContent}>
             <div className={styles.labelsContainer}>
